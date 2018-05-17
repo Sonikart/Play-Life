@@ -3,16 +3,72 @@
   font-family: "Main";
   src: url("../fonts/Failed.ttf") format("truetype"), url("../fonts/Failed.ttf") format("opentype");
 }
-/* line 4, ../sass/dashboard.scss */
+/* line 1, ../sass/_forms.scss */
+.icon {
+  position: absolute;
+  padding-top: 0px;
+  margin-left: 12.5px;
+  font-size: 18px;
+}
+
+/* line 8, ../sass/_forms.scss */
+.form-play {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+  text-indent: 40px;
+  border-bottom: 1px solid white;
+}
+/* line 18, ../sass/_forms.scss */
+.form-play:focus {
+  border-bottom: 1px solid #9a2b2b;
+}
+
+/* line 1, ../sass/_buttons.scss */
+.butn {
+  height: 35px;
+  width: auto;
+  padding: 0 10px;
+  color: white;
+  border: none;
+  line-height: 35px;
+  outline: none;
+}
+/* line 10, ../sass/_buttons.scss */
+.butn:focus {
+  outline: none;
+}
+/* line 11, ../sass/_buttons.scss */
+.butn:active {
+  outline: none;
+}
+
+/* line 14, ../sass/_buttons.scss */
+.danger-flat {
+  background-color: #9a2b2b;
+  color: white;
+}
+/* line 18, ../sass/_buttons.scss */
+.danger-flat:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #9a2b2b;
+  border: 1px solid #9a2b2b;
+}
+
+/* line 6, ../sass/dashboard.scss */
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background-image: url("https://t4.ftcdn.net/jpg/01/00/85/51/240_F_100855189_pMicXOVvQuGETWHaxBVLGoVPGEohsddX.jpg");
+  background-image: url("../img/background.jpeg");
   color: white;
+  font-family: 'Montserrat';
 }
 
-/* line 12, ../sass/dashboard.scss */
+/* line 15, ../sass/dashboard.scss */
 .touch {
   border: 1px solid white;
   padding: 2px 2px;
@@ -20,7 +76,7 @@ body {
   color: white;
 }
 
-/* line 19, ../sass/dashboard.scss */
+/* line 22, ../sass/dashboard.scss */
 .interact-touch {
   display: none;
   position: absolute;
@@ -28,28 +84,43 @@ body {
   left: 10px;
   font-weight: 700;
 }
-/* line 26, ../sass/dashboard.scss */
+/* line 29, ../sass/dashboard.scss */
 .interact-touch:hover {
   color: #9a2b2b;
   cursor: pointer;
 }
-/* line 30, ../sass/dashboard.scss */
+/* line 33, ../sass/dashboard.scss */
 .interact-touch:hover .touch {
   color: #9a2b2b;
   border: 1px solid #9a2b2b;
 }
 
-/* line 37, ../sass/dashboard.scss */
+/* line 40, ../sass/dashboard.scss */
+.error {
+  display: none;
+  z-index: 2;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  line-height: 40px;
+  text-indent: 15px;
+  background-color: #9a2b2b;
+  bottom: 0;
+  text-align: left;
+}
+
+/* line 53, ../sass/dashboard.scss */
 li {
   list-style: none;
 }
 
-/* line 39, ../sass/dashboard.scss */
+/* line 55, ../sass/dashboard.scss */
 .red {
   color: #9a2b2b;
 }
 
-/* line 41, ../sass/dashboard.scss */
+/* line 57, ../sass/dashboard.scss */
 .title-website {
   padding-top: 200px;
   font-size: 80px;
@@ -57,9 +128,9 @@ li {
   color: white;
 }
 
-/* line 50, ../sass/dashboard.scss */
+/* line 66, ../sass/dashboard.scss */
 .container-website-wallpaper {
-  position: absolute;
+  position: fixed;
   text-align: center;
   height: 100%;
   width: 100%;
@@ -70,7 +141,7 @@ li {
   background-color: rgba(18, 18, 18, 0.9);
 }
 
-/* line 63, ../sass/dashboard.scss */
+/* line 79, ../sass/dashboard.scss */
 .box-action {
   width: 400px;
   height: 200px;
@@ -81,7 +152,7 @@ li {
   margin-bottom: 10px;
   background-color: rgba(18, 18, 18, 0.8);
 }
-/* line 75, ../sass/dashboard.scss */
+/* line 91, ../sass/dashboard.scss */
 .box-action .action-select {
   height: 50px;
   width: 100%;
@@ -91,7 +162,7 @@ li {
   font-family: 'Montserrat';
   font-weight: 700;
 }
-/* line 86, ../sass/dashboard.scss */
+/* line 102, ../sass/dashboard.scss */
 .box-action .action-select:hover {
   cursor: pointer;
   border-right: 1px solid #9a2b2b;
@@ -99,18 +170,69 @@ li {
   color: #9a2b2b;
 }
 
-/* line 97, ../sass/dashboard.scss */
+/* line 113, ../sass/dashboard.scss */
 .box-new-profil {
-  width: 400px;
-  height: 500px;
+  text-align: left;
+  display: none;
+  width: 500px;
+  height: 350px;
   left: 0;
   right: 0;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 10px;
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 10px 10px;
+  border-bottom: 3px solid #9a2b2b;
 }
 
-/* line 107, ../sass/dashboard.scss */
+/* line 134, ../sass/dashboard.scss */
+.box-charge-profil {
+  text-align: left;
+  display: none;
+  width: 500px;
+  height: 250px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 10px 10px;
+  border-bottom: 3px solid #9a2b2b;
+}
+
+/* line 155, ../sass/dashboard.scss */
+.desc-box {
+  height: 35px;
+  margin-top: -10px;
+  left: 0;
+  right: 0;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+/* line 165, ../sass/dashboard.scss */
+.back-home {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 171, ../sass/dashboard.scss */
+.back-home:hover {
+  cursor: pointer;
+  color: #9a2b2b;
+}
+
+/* line 177, ../sass/dashboard.scss */
+.startship {
+  font-family: 'Main';
+  font-size: 23px;
+  text-align: center;
+}
+
+/* line 183, ../sass/dashboard.scss */
 .copy {
   color: white;
   font-family: 'Montserrat';

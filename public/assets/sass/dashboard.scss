@@ -1,12 +1,15 @@
 @import "fonts";
 @import 'colors';
+@import 'forms';
+@import 'buttons';
 
 body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-image:url('https://t4.ftcdn.net/jpg/01/00/85/51/240_F_100855189_pMicXOVvQuGETWHaxBVLGoVPGEohsddX.jpg');
+    background-image:url('../img/background.jpeg');
     color: white;
+    font-family: 'Montserrat';
 }
 
 .touch{
@@ -34,6 +37,19 @@ body{
     }
 }
 
+.error{
+    display: none;
+    z-index:2;
+    height: 40px;
+    position: absolute;
+    left: 0; right: 0;
+    line-height: 40px;
+    text-indent: 15px;
+    background-color: $red;
+    bottom: 0;
+    text-align: left;
+}
+
 li{list-style: none;}
 
 .red{color:$red}
@@ -48,7 +64,7 @@ li{list-style: none;}
 }
 
 .container-website-wallpaper{
-    position:absolute;
+    position: fixed;
     text-align: center;
 
     height: 100%;
@@ -95,13 +111,73 @@ li{list-style: none;}
 }
 
 .box-new-profil{
-    width:400px;
-    height:500px;
+    text-align: left;
+
+    display: none;
+
+    width:500px;
+    height:350px;
 
     left: 0; right: 0;
+
     margin: auto;
     margin-top:25px;
     margin-bottom:10px;
+
+    background-color: rgba(#121212, 0.8);
+
+    padding:10px 10px;
+
+    border-bottom:3px solid $red;
+}
+
+.box-charge-profil{
+    text-align: left;
+
+    display: none;
+
+    width:500px;
+    height:250px;
+
+    left: 0; right: 0;
+
+    margin: auto;
+    margin-top:25px;
+    margin-bottom:10px;
+
+    background-color: rgba(#121212, 0.8);
+
+    padding:10px 10px;
+
+    border-bottom:3px solid $red;
+}
+
+.desc-box{
+    height:35px;
+    margin-top:-10px;
+    left: 0; right: 0;
+
+    line-height:35px;
+
+    margin-bottom:15px;
+}
+
+.back-home{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    &:hover{
+        cursor: pointer;
+        color: $red;
+    }
+}
+
+.startship{
+    font-family: 'Main';
+    font-size:23px;
+    text-align: center;
 }
 
 .copy{

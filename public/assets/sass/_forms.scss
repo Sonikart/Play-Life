@@ -1,0 +1,21 @@
+.icon{
+    position:absolute;
+    padding-top:0px;
+    margin-left:12.5px;
+    font-size:18px;
+}
+
+.form-play{
+    border: none;
+    outline: none;
+    background:transparent;
+    color: white;
+    width:100%;
+    text-indent:40px;
+
+    border-bottom:1px solid white;
+
+    &:focus{
+        border-bottom:1px solid $red;
+    }
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@font-face {
+  font-family: "Main";
+  src: url("../fonts/Failed.ttf") format("truetype"), url("../fonts/Failed.ttf") format("opentype");
+}
+/* line 1, ../sass/_forms.scss */
+.icon {
+  position: absolute;
+  padding-top: 0px;
+  margin-left: 12.5px;
+  font-size: 18px;
+}
+
+/* line 8, ../sass/_forms.scss */
+.form-play {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+  text-indent: 40px;
+  border-bottom: 1px solid white;
+}
+/* line 18, ../sass/_forms.scss */
+.form-play:focus {
+  border-bottom: 1px solid #9a2b2b;
+}
+
+/* line 1, ../sass/_buttons.scss */
+.butn {
+  height: 35px;
+  width: auto;
+  padding: 0 10px;
+  color: white;
+  border: none;
+  line-height: 35px;
+  outline: none;
+}
+/* line 10, ../sass/_buttons.scss */
+.butn:focus {
+  outline: none;
+}
+/* line 11, ../sass/_buttons.scss */
+.butn:active {
+  outline: none;
+}
+
+/* line 14, ../sass/_buttons.scss */
+.danger-flat {
+  background-color: #9a2b2b;
+  color: white;
+}
+/* line 18, ../sass/_buttons.scss */
+.danger-flat:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #9a2b2b;
+  border: 1px solid #9a2b2b;
+}
+
+/* line 1, ../sass/layout/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url("../img/background.jpeg");
+  color: white;
+  font-family: 'Montserrat';
+}
+
+/* line 10, ../sass/layout/_base.scss */
+.container-website-wallpaper {
+  position: fixed;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(18, 18, 18, 0.9);
+}
