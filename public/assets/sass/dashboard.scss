@@ -1,0 +1,112 @@
+@import "fonts";
+@import 'colors';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-image:url('https://t4.ftcdn.net/jpg/01/00/85/51/240_F_100855189_pMicXOVvQuGETWHaxBVLGoVPGEohsddX.jpg');
+    color: white;
+}
+
+.touch{
+    border:1px solid white;
+    padding: 2px 2px;
+    font-size:14px;
+    color: white;
+}
+
+.interact-touch{
+    display: none;
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: 700;
+
+    &:hover{
+        color: $red;
+        cursor: pointer;
+
+        .touch{
+            color: $red;
+            border:1px solid $red;
+        }
+    }
+}
+
+li{list-style: none;}
+
+.red{color:$red}
+
+.title-website{
+    padding-top:200px;
+
+    font-size: 80px;
+    font-family: 'Main';
+
+    color: white;
+}
+
+.container-website-wallpaper{
+    position:absolute;
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+
+    left:0; right: 0;
+    top: 0; bottom: 0;
+
+    background-color: rgba($black, 0.9);
+}
+
+.box-action{
+    width: 400px;
+    height: 200px;
+
+    left: 0; right: 0;
+
+    margin: auto;
+    margin-top:25px;
+    margin-bottom:10px;
+
+    background-color: rgba(#121212, 0.8);
+
+    .action-select{
+        height: 50px;
+        width: 100%;
+
+        color: white;
+
+        line-height:50px;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-weight: 700;
+
+        &:hover{
+            cursor: pointer;
+
+            border-right: 1px solid $red;
+            border-left: 1px solid $red;
+
+            color: $red;
+        }
+    }
+}
+
+.box-new-profil{
+    width:400px;
+    height:500px;
+
+    left: 0; right: 0;
+    margin: auto;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.copy{
+    color: white;
+
+    font-family: 'Montserrat';
+    font-size:12px;
+}

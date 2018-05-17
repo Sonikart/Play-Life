@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@font-face {
+  font-family: "Main";
+  src: url("../fonts/Failed.ttf") format("truetype"), url("../fonts/Failed.ttf") format("opentype");
+}
+/* line 4, ../sass/dashboard.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url("https://t4.ftcdn.net/jpg/01/00/85/51/240_F_100855189_pMicXOVvQuGETWHaxBVLGoVPGEohsddX.jpg");
+  color: white;
+}
+
+/* line 12, ../sass/dashboard.scss */
+.touch {
+  border: 1px solid white;
+  padding: 2px 2px;
+  font-size: 14px;
+  color: white;
+}
+
+/* line 19, ../sass/dashboard.scss */
+.interact-touch {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: 700;
+}
+/* line 26, ../sass/dashboard.scss */
+.interact-touch:hover {
+  color: #9a2b2b;
+  cursor: pointer;
+}
+/* line 30, ../sass/dashboard.scss */
+.interact-touch:hover .touch {
+  color: #9a2b2b;
+  border: 1px solid #9a2b2b;
+}
+
+/* line 37, ../sass/dashboard.scss */
+li {
+  list-style: none;
+}
+
+/* line 39, ../sass/dashboard.scss */
+.red {
+  color: #9a2b2b;
+}
+
+/* line 41, ../sass/dashboard.scss */
+.title-website {
+  padding-top: 200px;
+  font-size: 80px;
+  font-family: 'Main';
+  color: white;
+}
+
+/* line 50, ../sass/dashboard.scss */
+.container-website-wallpaper {
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(18, 18, 18, 0.9);
+}
+
+/* line 63, ../sass/dashboard.scss */
+.box-action {
+  width: 400px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgba(18, 18, 18, 0.8);
+}
+/* line 75, ../sass/dashboard.scss */
+.box-action .action-select {
+  height: 50px;
+  width: 100%;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+/* line 86, ../sass/dashboard.scss */
+.box-action .action-select:hover {
+  cursor: pointer;
+  border-right: 1px solid #9a2b2b;
+  border-left: 1px solid #9a2b2b;
+  color: #9a2b2b;
+}
+
+/* line 97, ../sass/dashboard.scss */
+.box-new-profil {
+  width: 400px;
+  height: 500px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* line 107, ../sass/dashboard.scss */
+.copy {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 12px;
+}
