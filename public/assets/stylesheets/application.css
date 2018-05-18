@@ -69,9 +69,13 @@ body {
 }
 
 /* line 10, ../sass/layout/_base.scss */
+.container-fluid {
+  margin-top: 20px;
+}
+
+/* line 14, ../sass/layout/_base.scss */
 .container-website-wallpaper {
   position: fixed;
-  text-align: center;
   height: 100%;
   width: 100%;
   left: 0;
@@ -79,4 +83,157 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(18, 18, 18, 0.9);
+}
+
+/* line 26, ../sass/layout/_base.scss */
+.tp11 {
+  font-size: 11px;
+}
+
+/* line 27, ../sass/layout/_base.scss */
+.tp12 {
+  font-size: 12px;
+}
+
+/* line 28, ../sass/layout/_base.scss */
+.tp13 {
+  font-size: 13px;
+}
+
+/* line 29, ../sass/layout/_base.scss */
+.tp14 {
+  font-size: 14px;
+}
+
+/* line 30, ../sass/layout/_base.scss */
+.tp15 {
+  font-size: 15px;
+}
+
+/* line 31, ../sass/layout/_base.scss */
+.tp16 {
+  font-size: 16px;
+}
+
+/* line 32, ../sass/layout/_base.scss */
+.tp17 {
+  font-size: 17px;
+}
+
+/* line 33, ../sass/layout/_base.scss */
+.tp18 {
+  font-size: 18px;
+}
+
+/* line 34, ../sass/layout/_base.scss */
+.tp19 {
+  font-size: 19px;
+}
+
+/* line 35, ../sass/layout/_base.scss */
+.tp20 {
+  font-size: 20px;
+}
+
+/* line 1, ../sass/element/_header.scss */
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.8);
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #9a2b2b;
+  font-family: 'Montserrat';
+}
+/* line 12, ../sass/element/_header.scss */
+.header .nav-header {
+  width: auto;
+  padding: 0 10px;
+  color: white;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+/* line 22, ../sass/element/_header.scss */
+.header .nav-header:hover {
+  background-color: #9a2b2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 1, ../sass/element/_leftDashboard.scss */
+.box-information-profil {
+  left: 0;
+  right: 0;
+  height: auto;
+  background-image: url("https://euw.leagueoflegends.com/sites/default/files/upload/art/teambuilder-wallpaper.jpg");
+}
+
+/* line 7, ../sass/element/_leftDashboard.scss */
+.box-content-information {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  text-align: center;
+  border-bottom: 2px solid #9a2b2b;
+}
+/* line 15, ../sass/element/_leftDashboard.scss */
+.box-content-information .information-level {
+  position: relative;
+  left: 5px;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+}
+/* line 23, ../sass/element/_leftDashboard.scss */
+.box-content-information .avatar_profil {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* line 31, ../sass/element/_leftDashboard.scss */
+.box-information-level {
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+/* line 38, ../sass/element/_leftDashboard.scss */
+.box-information-level .content-info-level {
+  position: absolute;
+  height: 40px;
+  width: 20%;
+  display: inline-block;
+  font-family: 'Main';
+  font-size: 50px;
+  line-height: 40px;
+  text-align: left;
+}
+/* line 49, ../sass/element/_leftDashboard.scss */
+.box-information-level .content-info-xp {
+  margin-top: 30px;
+  height: 5px;
+  width: 78%;
+  background-color: black;
+  display: inline-block;
+  float: right;
+}
+/* line 57, ../sass/element/_leftDashboard.scss */
+.box-information-level .content-info-xp .content-xp {
+  height: 5px;
+  width: 0%;
+  background-color: red;
+}
+/* line 63, ../sass/element/_leftDashboard.scss */
+.box-information-level .content-info-xp .content-text-xp {
+  position: absolute;
+  margin-top: -30px;
 }

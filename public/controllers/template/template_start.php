@@ -1,5 +1,16 @@
 <?php 
-    if($_SESSION['login'] != 1){ header('Location: dashboard.php'); }
+    if($_SESSION['login'] != 1){ 
+        header('Location: dashboard.php'); 
+    } else {
+        $info = $site->bdd->query('SELECT * FROM users WHERE id_membre = "'.$_SESSION['id'].'"');
+        $info = $info->fetch();
+
+        $infoplus = $site->bdd->query('SELECT * FROM users_info WHERE id_membre = "'.$_SESSION['id'].'"');
+        $infoplus = $infoplus->fetch();
+
+        $infoshare = $site->bdd->query('SELECT * FROM users_share WHERE id_membre = "'.$_SESSION['id'].'"');
+        $infoshare = $infoshare->fetch();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">

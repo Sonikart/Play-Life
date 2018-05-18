@@ -7,9 +7,12 @@ body{
     font-family: 'Montserrat';
 }
 
+.container-fluid{
+    margin-top:20px;
+}
+
 .container-website-wallpaper{
     position: fixed;
-    text-align: center;
 
     height: 100%;
     width: 100%;
@@ -19,3 +22,14 @@ body{
 
     background-color: rgba($black, 0.9);
 }
+
+.tp11{font-size: 11px;}
+.tp12{font-size: 12px;}
+.tp13{font-size: 13px;}
+.tp14{font-size: 14px;}
+.tp15{font-size: 15px;}
+.tp16{font-size: 16px;}
+.tp17{font-size: 17px;}
+.tp18{font-size: 18px;}
+.tp19{font-size: 19px;}
+.tp20{font-size: 20px;}

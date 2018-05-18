@@ -36,6 +36,28 @@ if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['passw
                                 'date_register' => time()
                             ]);
 
+                            $info_user = $site->bdd->prepare('INSERT INTO users_info (id_membre, avatar, cover, theme, solde, adresse_ip, verified, experience, level) VALUES 
+                            (:id_membre, :avatar, :cover, :theme, :solde, :adresse_ip, :verified, :experience, :level)');
+                            $info_user->execute([
+                                'id_membre'         => $id_membre,
+                                'avatar'            => 'defaut.png',
+                                'cover'             => 'defaut.png',
+                                'theme'             => 'default',
+                                'solde'             => '0',
+                                'adresse_ip'        => $_SERVER['REMOTE_ADDR'],
+                                'verified'          => '0',
+                                'experience'        => '10',
+                                'level'             => '0'
+                            ]);
+
+                            $user_share = $site->bdd->prepare('INSERT INTO users_share (id_membre, pays, langue) VALUES 
+                            (:id_membre, :pays, :langue)');
+                            $user_share->execute([
+                                'id_membre'     => $id_membre,
+                                'pays'          => 'France',
+                                'langue'        => 'Français',
+                            ]);
+
                             $_SESSION['login']      = 1;
                             $_SESSION['id']         = $id_membre;
                             

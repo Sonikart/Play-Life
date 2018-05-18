@@ -22,7 +22,7 @@
         <!-- Choix de depart -->
         <div class="box-action">
             <li id="new-profil" class="action-select">Nouveau Profil</li>
-            <li id="charge-profil" class="action-select">Charger un Profil</li>
+            <li id="charge-profil" class="action-select">Charger un profil</li>
             <li class="action-select">En savoir plus</li>
             <li class="action-select">Micro-Serum</li>
         </div>
@@ -61,14 +61,14 @@
             <div class="desc-box">
                 <i class="fas fa-user-plus"></i> Charger votre profil
             </div>
-            <form id="charge-profil">
+            <form id="charge-user">
                 <div class="form-group">
                     <div class="icon"><i class="fas fa-user"></i></div>
                     <input type="text" name="username" class="form-play" placeholder="Votre pseudonyme">
                 </div>
                 <div class="form-group">
                     <div class="icon"><i class="fas fa-key"></i></div>
-                    <input type="email" name="password" class="form-play" placeholder="Votre mot de passe">
+                    <input type="password" name="password" class="form-play" placeholder="Votre mot de passe">
                 </div>
                 <div class="form-group">
                     <center><button class="butn danger-flat">Charger mon profil</button></center>

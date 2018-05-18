@@ -1,0 +1,68 @@
+.box-information-profil{
+    left: 0; right: 0;
+    height: auto;
+    background-image:url('https://euw.leagueoflegends.com/sites/default/files/upload/art/teambuilder-wallpaper.jpg');
+}
+
+.box-content-information{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(black, 0.5);
+    padding: 10px 10px;
+    text-align: center;
+    border-bottom:2px solid $red;
+
+    .information-level{
+        position: relative;
+        left: 5px;
+        top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .avatar_profil{
+        height: 110px;
+        width: 110px;
+        border-radius:50%;
+        margin-bottom:10px;
+    }
+}
+
+.box-information-level{
+    left: 0; right: 0;
+    background-color: rgba(black, 0.3);
+    height: 60px;
+    margin-bottom:15px;
+    padding: 10px 10px;
+
+    .content-info-level{
+        position: absolute;
+        height: 40px;
+        width: 20%;
+        display: inline-block;
+        font-family: 'Main';
+        font-size:50px;
+        line-height:40px;
+        text-align: left;
+    }
+
+    .content-info-xp{
+        margin-top:30px;
+        height: 5px;
+        width: 78%;
+        background-color: black;
+        display: inline-block;
+        float: right;
+
+        .content-xp{
+            height: 5px;
+            width:0%;
+            background-color: red;
+        }
+
+        .content-text-xp{
+            position: absolute;
+            margin-top:-30px;
+        }
+    }
+}

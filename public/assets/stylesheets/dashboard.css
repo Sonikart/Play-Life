@@ -111,16 +111,28 @@ body {
 }
 
 /* line 53, ../sass/dashboard.scss */
+.danger-err {
+  background-color: #9a2b2b;
+  color: white;
+}
+
+/* line 58, ../sass/dashboard.scss */
+.success-err {
+  background-color: green;
+  color: white;
+}
+
+/* line 63, ../sass/dashboard.scss */
 li {
   list-style: none;
 }
 
-/* line 55, ../sass/dashboard.scss */
+/* line 65, ../sass/dashboard.scss */
 .red {
   color: #9a2b2b;
 }
 
-/* line 57, ../sass/dashboard.scss */
+/* line 67, ../sass/dashboard.scss */
 .title-website {
   padding-top: 200px;
   font-size: 80px;
@@ -128,7 +140,7 @@ li {
   color: white;
 }
 
-/* line 66, ../sass/dashboard.scss */
+/* line 76, ../sass/dashboard.scss */
 .container-website-wallpaper {
   position: fixed;
   text-align: center;
@@ -141,7 +153,7 @@ li {
   background-color: rgba(18, 18, 18, 0.9);
 }
 
-/* line 79, ../sass/dashboard.scss */
+/* line 89, ../sass/dashboard.scss */
 .box-action {
   width: 400px;
   height: 200px;
@@ -152,7 +164,7 @@ li {
   margin-bottom: 10px;
   background-color: rgba(18, 18, 18, 0.8);
 }
-/* line 91, ../sass/dashboard.scss */
+/* line 101, ../sass/dashboard.scss */
 .box-action .action-select {
   height: 50px;
   width: 100%;
@@ -162,7 +174,7 @@ li {
   font-family: 'Montserrat';
   font-weight: 700;
 }
-/* line 102, ../sass/dashboard.scss */
+/* line 112, ../sass/dashboard.scss */
 .box-action .action-select:hover {
   cursor: pointer;
   border-right: 1px solid #9a2b2b;
@@ -170,7 +182,7 @@ li {
   color: #9a2b2b;
 }
 
-/* line 113, ../sass/dashboard.scss */
+/* line 123, ../sass/dashboard.scss */
 .box-new-profil {
   text-align: left;
   display: none;
@@ -186,7 +198,7 @@ li {
   border-bottom: 3px solid #9a2b2b;
 }
 
-/* line 134, ../sass/dashboard.scss */
+/* line 144, ../sass/dashboard.scss */
 .box-charge-profil {
   text-align: left;
   display: none;
@@ -202,7 +214,7 @@ li {
   border-bottom: 3px solid #9a2b2b;
 }
 
-/* line 155, ../sass/dashboard.scss */
+/* line 165, ../sass/dashboard.scss */
 .desc-box {
   height: 35px;
   margin-top: -10px;
@@ -212,27 +224,27 @@ li {
   margin-bottom: 15px;
 }
 
-/* line 165, ../sass/dashboard.scss */
+/* line 175, ../sass/dashboard.scss */
 .back-home {
   display: none;
   position: absolute;
   top: 10px;
   left: 10px;
 }
-/* line 171, ../sass/dashboard.scss */
+/* line 181, ../sass/dashboard.scss */
 .back-home:hover {
   cursor: pointer;
   color: #9a2b2b;
 }
 
-/* line 177, ../sass/dashboard.scss */
+/* line 187, ../sass/dashboard.scss */
 .startship {
   font-family: 'Main';
   font-size: 23px;
   text-align: center;
 }
 
-/* line 183, ../sass/dashboard.scss */
+/* line 193, ../sass/dashboard.scss */
 .copy {
   color: white;
   font-family: 'Montserrat';

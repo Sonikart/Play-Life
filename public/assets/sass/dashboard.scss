@@ -50,6 +50,16 @@ body{
     text-align: left;
 }
 
+.danger-err{
+    background-color:$red;
+    color: white;
+}
+
+.success-err{
+    background-color: green;
+    color: white;
+}
+
 li{list-style: none;}
 
 .red{color:$red}
