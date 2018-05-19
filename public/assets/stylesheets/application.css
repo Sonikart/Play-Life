@@ -59,6 +59,23 @@
 }
 
 /* line 1, ../sass/layout/_base.scss */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #9a2b2b;
+  background-color: #121212;
+}
+
+/* line 7, ../sass/layout/_base.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #121212;
+}
+
+/* line 13, ../sass/layout/_base.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #9a2b2b;
+}
+
+/* line 18, ../sass/layout/_base.scss */
 body {
   margin: 0;
   padding: 0;
@@ -68,12 +85,12 @@ body {
   font-family: 'Montserrat';
 }
 
-/* line 10, ../sass/layout/_base.scss */
+/* line 27, ../sass/layout/_base.scss */
 .container-fluid {
   margin-top: 20px;
 }
 
-/* line 14, ../sass/layout/_base.scss */
+/* line 31, ../sass/layout/_base.scss */
 .container-website-wallpaper {
   position: fixed;
   height: 100%;
@@ -83,54 +100,78 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(18, 18, 18, 0.9);
+  overflow: auto;
 }
 
-/* line 26, ../sass/layout/_base.scss */
+/* line 45, ../sass/layout/_base.scss */
+.icon-plateform {
+  font-size: 25px;
+}
+
+/* line 49, ../sass/layout/_base.scss */
+.interaction-website {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #9a2b2b;
+  color: white;
+}
+/* line 57, ../sass/layout/_base.scss */
+.interaction-website:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #9a2b2b;
+  color: #9a2b2b;
+}
+
+/* line 65, ../sass/layout/_base.scss */
 .tp11 {
   font-size: 11px;
 }
 
-/* line 27, ../sass/layout/_base.scss */
+/* line 66, ../sass/layout/_base.scss */
 .tp12 {
   font-size: 12px;
 }
 
-/* line 28, ../sass/layout/_base.scss */
+/* line 67, ../sass/layout/_base.scss */
 .tp13 {
   font-size: 13px;
 }
 
-/* line 29, ../sass/layout/_base.scss */
+/* line 68, ../sass/layout/_base.scss */
 .tp14 {
   font-size: 14px;
 }
 
-/* line 30, ../sass/layout/_base.scss */
+/* line 69, ../sass/layout/_base.scss */
 .tp15 {
   font-size: 15px;
 }
 
-/* line 31, ../sass/layout/_base.scss */
+/* line 70, ../sass/layout/_base.scss */
 .tp16 {
   font-size: 16px;
 }
 
-/* line 32, ../sass/layout/_base.scss */
+/* line 71, ../sass/layout/_base.scss */
 .tp17 {
   font-size: 17px;
 }
 
-/* line 33, ../sass/layout/_base.scss */
+/* line 72, ../sass/layout/_base.scss */
 .tp18 {
   font-size: 18px;
 }
 
-/* line 34, ../sass/layout/_base.scss */
+/* line 73, ../sass/layout/_base.scss */
 .tp19 {
   font-size: 19px;
 }
 
-/* line 35, ../sass/layout/_base.scss */
+/* line 74, ../sass/layout/_base.scss */
 .tp20 {
   font-size: 20px;
 }
@@ -169,19 +210,21 @@ body {
   left: 0;
   right: 0;
   height: auto;
-  background-image: url("https://euw.leagueoflegends.com/sites/default/files/upload/art/teambuilder-wallpaper.jpg");
+  background-image: url("https://art-of-lol.com/wp-content/uploads/2016/05/League-Of-Legends-Wallpaper-HD-1920x1080-7.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-/* line 7, ../sass/element/_leftDashboard.scss */
+/* line 9, ../sass/element/_leftDashboard.scss */
 .box-content-information {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 10px;
   text-align: center;
   border-bottom: 2px solid #9a2b2b;
 }
-/* line 15, ../sass/element/_leftDashboard.scss */
+/* line 17, ../sass/element/_leftDashboard.scss */
 .box-content-information .information-level {
   position: relative;
   left: 5px;
@@ -189,7 +232,17 @@ body {
   height: 20px;
   width: 20px;
 }
-/* line 23, ../sass/element/_leftDashboard.scss */
+/* line 25, ../sass/element/_leftDashboard.scss */
+.box-content-information .information-plateform {
+  position: relative;
+  right: 5px;
+  top: 5px;
+  float: right;
+  height: 20px;
+  width: auto;
+  margin-top: -22.5px;
+}
+/* line 35, ../sass/element/_leftDashboard.scss */
 .box-content-information .avatar_profil {
   height: 110px;
   width: 110px;
@@ -197,7 +250,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 31, ../sass/element/_leftDashboard.scss */
+/* line 43, ../sass/element/_leftDashboard.scss */
 .box-information-level {
   left: 0;
   right: 0;
@@ -206,7 +259,7 @@ body {
   margin-bottom: 15px;
   padding: 10px 10px;
 }
-/* line 38, ../sass/element/_leftDashboard.scss */
+/* line 50, ../sass/element/_leftDashboard.scss */
 .box-information-level .content-info-level {
   position: absolute;
   height: 40px;
@@ -215,9 +268,9 @@ body {
   font-family: 'Main';
   font-size: 50px;
   line-height: 40px;
-  text-align: left;
+  text-align: center;
 }
-/* line 49, ../sass/element/_leftDashboard.scss */
+/* line 61, ../sass/element/_leftDashboard.scss */
 .box-information-level .content-info-xp {
   margin-top: 30px;
   height: 5px;
@@ -226,14 +279,73 @@ body {
   display: inline-block;
   float: right;
 }
-/* line 57, ../sass/element/_leftDashboard.scss */
+/* line 69, ../sass/element/_leftDashboard.scss */
 .box-information-level .content-info-xp .content-xp {
   height: 5px;
   width: 0%;
   background-color: red;
 }
-/* line 63, ../sass/element/_leftDashboard.scss */
+/* line 75, ../sass/element/_leftDashboard.scss */
 .box-information-level .content-info-xp .content-text-xp {
   position: absolute;
   margin-top: -30px;
+}
+
+/* line 82, ../sass/element/_leftDashboard.scss */
+.box-switch {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 89, ../sass/element/_leftDashboard.scss */
+.box-switch .switch-element {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+  text-indent: 7.5px;
+  height: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+/* line 98, ../sass/element/_leftDashboard.scss */
+.box-switch .switch-element:hover {
+  cursor: pointer;
+  background-color: rgba(154, 43, 43, 0.6);
+  color: white;
+}
+
+/* line 106, ../sass/element/_leftDashboard.scss */
+.plateform-position {
+  position: absolute;
+  right: 5px;
+}
+
+/* line 1, ../sass/element/_rightDashboard.scss */
+.box-warning {
+  height: 250px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+/* line 11, ../sass/element/_rightDashboard.scss */
+.box-warning .title-warning {
+  height: 35px;
+  width: 100%;
+  line-height: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  text-indent: 5px;
+}
+/* line 23, ../sass/element/_rightDashboard.scss */
+.box-warning .box-content-warning {
+  height: auto;
+  width: 100%;
+  padding: 5px 5px;
+  list-style: none;
+  font-size: 12px;
 }

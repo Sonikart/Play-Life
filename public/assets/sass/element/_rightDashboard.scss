@@ -1,0 +1,33 @@
+.box-warning{
+    height: 250px;
+    width: 100%;
+
+    left: 0; right: 0;
+
+    background-color: rgba(black, 0.2);
+
+    overflow: auto;
+
+    .title-warning{
+        height: 35px;
+        width: 100%;
+
+        line-height: 35px;
+        
+        background-color: rgba(black, 0.4);
+
+        text-transform: uppercase;
+        text-indent: 5px;
+    }
+
+    .box-content-warning{
+        height: auto;
+        width: 100%;
+
+        padding: 5px 5px;
+        list-style: none;
+
+        font-size: 12px;
+    }
+}
+
